@@ -48,7 +48,6 @@ def move_in_line():
                 toward_hand = False
 
 
-
 running = True
 toward_hand = False
 
@@ -67,7 +66,10 @@ while running:
     clear_canvas()
     TUK_ground.draw(TUK_WIDTH // 2, TUK_HEIGHT // 2)
     hand.draw(mouse_x, mouse_y)
-    character.clip_draw(frame * 100, 100 * 1, 100, 100, character_x, character_y)
+    if player_first_x <= player_last_x:
+        character.clip_draw(frame * 100, 100 * 1, 100, 100, character_x, character_y)
+    else:
+        character.clip_composite_draw(frame * 100, 100 * 1, 100, 100, 0, 'h', character_x, character_y, 100, 100)
 
     if character_x == player_last_x and character_y == player_last_y:
         player_first_x, player_first_y = player_last_x, player_last_y
