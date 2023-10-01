@@ -44,7 +44,6 @@ def move_in_line():
             i += 1
             if i > 100:
                 i = 0
-                a += 1
                 toward_hand = False
 
 
@@ -74,6 +73,9 @@ while running:
     if character_x == player_last_x and character_y == player_last_y:
         player_first_x, player_first_y = player_last_x, player_last_y
         toward_hand = True
+        if character_x != TUK_WIDTH // 2 and character_y != TUK_HEIGHT // 2:
+            if a < len(hand_positions):
+                del hand_positions[a]
     for x, y in hand_positions:
         hand.draw(x, y)
 

@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cff74ecb-0f7f-43cf-b414-93dd36475dbb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/character_trace_hand_by_mouse.py" beforeDir="false" afterPath="$PROJECT_DIR$/character_trace_hand_by_mouse.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
